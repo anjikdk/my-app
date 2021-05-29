@@ -23,6 +23,7 @@
 		</dependency>
 	
 	</dependencies>
+	
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexus</id>
