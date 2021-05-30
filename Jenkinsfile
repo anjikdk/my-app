@@ -4,11 +4,6 @@ pipeline{
         maven 'maven3'
     }
     stages{
-        stage("Clone the code from GIT"){
-            steps{
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/anjikdk/my-app'
-            }
-        }
         stage("Build the code with help of maven"){
             steps{
                 sh 'mvn clean package'
